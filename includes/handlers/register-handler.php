@@ -34,8 +34,8 @@ if(isset($_POST['registerButton'])){
 
     //Use function instead to clean code duplication
     $username = sanitizeFormUsername($_POST['username']);
-    $firstName = sanitizeString($_POST['firstName']);
-    $lastName = sanitizeString($_POST['lastName']);    
+    $firstName = sanitizeFormString($_POST['firstName']);
+    $lastName = sanitizeFormString($_POST['lastName']);    
     $email = sanitizeFormString($_POST['email']);
     $email2 = sanitizeFormString($_POST['email2']);
     $password = sanitizeFormPassword($_POST['password']);

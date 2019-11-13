@@ -27,6 +27,7 @@
         <form id="registerForm" action="register.php" method="POST">
             <h2>Create your free account</h2>
             <p>
+            <?php echo $account->getError("Your username must be between 5 and 25 characters.");?>
                 <label for="username">Username</label>
                 <input id="username" name="username" type="text" placeholder="e.g. bartSimpson">
             </p>

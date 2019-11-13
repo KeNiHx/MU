@@ -12,6 +12,13 @@
             $this->validateLastName($lastName);
             $this->validateEmails($email, $email2);
             $this->validatePasswords($passward, $password2);
+
+            if(empty($this->errorArray) ==true){
+                //Insert into DB
+                return true;
+            }else{
+                return false;
+            }
         }
         private function validateUsername($fn) {
             if(strlen($fn) > 25 || strlen($fn) < 5){

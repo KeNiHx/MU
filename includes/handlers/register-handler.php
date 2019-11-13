@@ -35,12 +35,14 @@ if(isset($_POST['registerButton'])){
     //Use function instead to clean code duplication
     $username = sanitizeFormUsername($_POST['username']);
     $firstName = sanitizeString($_POST['firstName']);
+    $lastName = sanitizeString($_POST['lastName']);    
     $email = sanitizeFormString($_POST['email']);
     $email2 = sanitizeFormString($_POST['email2']);
-    $passward = sanitizeFormPassword($_POST['password']);
-    $passward2 = sanitizeFormPassword($_POST['password2']);
+    $password = sanitizeFormPassword($_POST['password']);
+    $password2 = sanitizeFormPassword($_POST['password2']);
 
-    
+    $account->register($username, $firstName, $lastName, $email, $email2, $password, $password2);
+
 }
 
 ?>

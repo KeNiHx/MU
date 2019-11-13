@@ -1,6 +1,6 @@
 #Spotify Clone Project
 
-This is my spotify clone project =)
+This is my spotify clone project :smiley:
 
 :computer:
 :coffee:

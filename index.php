@@ -13,8 +13,17 @@ if(isset($_SESSION['userLoggedIn'])){
 <html>
 <head>
     <title>Welcome to MU's!</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 <body>
-    Hello
+    
+
+
+    <div id="nowPlayingBarContainer">
+
+    </div>
+
+
+
 </body>
 </html>

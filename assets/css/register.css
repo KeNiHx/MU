@@ -80,6 +80,7 @@ html, body{
 #inputContainer label {
     color: #a0a0a0;
     font-size: 13px;
+    display: block;
     margin-top: 15px;
     
 }
@@ -138,6 +139,12 @@ html, body{
 #loginText li {
     font-size: 20px;
     list-style-type: none;
-    padding: 20px 0px 0px 60px;    
+    padding: 20px 0px 5px 60px;    
     background: url(../images/icons/checkmark.png) no-repeat 0 0;
+}
+
+#inputContainer .errorMessage {
+    color: #07d159;
+    font-size: 12px;
+    display: block;
 }

@@ -31,6 +31,28 @@ html, body{
     max-width: 1024px;
 }
 
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    #FFF;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    #FFF;
+   opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    #FFF;
+   opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:    #FFF;
+}
+::-ms-input-placeholder { /* Microsoft Edge */
+   color:    #FFF;
+}
+
+::placeholder { /* Most modern browsers support this now. */
+   color:    #FFF;
+}
+
 #inputContainer {
     width: 400px;
     padding: 45px;
@@ -53,4 +75,28 @@ html, body{
     height: 27px;
     line-height: 27px;
     width: 100%;
+}
+
+#inputContainer label {
+    color: #a0a0a0;
+    font-size: 13px;
+    margin-top: 15px;
+    
+}
+
+#inputContainer button {
+    background-color: transparent;
+    border: 2px solid #fff;
+    border-radius: 250px;
+    color: #FFF;
+    display: block;
+    font-size: 14px;
+    letter-spacing: 1px;
+    margin: 20px auto;
+    height: 41px;
+    width: 100%;
+}
+
+#inputContainer button:hover {
+    cursor: pointer;
 }

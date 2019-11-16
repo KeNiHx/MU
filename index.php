@@ -26,6 +26,14 @@ if(isset($_SESSION['userLoggedIn'])){
                     <span class="albumLink">
                         <img src="https://i.pinimg.com/originals/7e/cb/b8/7ecbb87db2f488bc0986750e0b0f6fe3.jpg" class="albumArtwork">
                     </span>
+                    <div class="trackInfo"> 
+                        <span class="trackName">
+                            <span>BOOMBAYAH</span>
+                        </span>
+                        <span class="artistName">
+                            <span>BACKPINK</span>
+                        </span>
+                    </div>
                 </div>
             </div>
             <div id="nowPlayingCenter">

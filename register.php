@@ -35,6 +35,9 @@
                         <input id="loginPassword" name="loginPassword" type="password" placeholder="Your Password" required>
                     </p>
                     <button type="submit" name="loginButton">Log In</button>
+                    <div class="hasAccountText">
+                        <span id="hideLogin">Don't have an account yet? Signup here.</span>
+                    </div>
                 </form>
 
                 <form id="registerForm" action="register.php" method="POST">
@@ -78,6 +81,10 @@
                         <input id="password2" name="password2" type="password" placeholder="Confirm Your Password" required>
                     </p>
                     <button type="submit" name="registerButton">Sign up</button>
+
+                    <div class="hasAccountText">
+                        <span id="hideRegister">Already have an account? Login here.</span>
+                    </div>
                 </form>
             </div>
         </div>

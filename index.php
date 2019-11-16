@@ -20,7 +20,8 @@ if(isset($_SESSION['userLoggedIn'])){
 
 
     <div id="nowPlayingBarContainer">
-
+        <div id="nowPlayingBar">
+        </div>
     </div>
 
 

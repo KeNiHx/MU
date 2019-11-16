@@ -110,6 +110,7 @@ html, body{
     text-align: center;
 }
 
-#registerForm {
+#registerForm,
+#loginForm {
     display: none;
 }

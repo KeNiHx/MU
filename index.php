@@ -22,7 +22,11 @@ if(isset($_SESSION['userLoggedIn'])){
     <div id="nowPlayingBarContainer">
         <div id="nowPlayingBar">
             <div id="nowPlayingLeft">
-
+                <div class="content">
+                    <span class="albumLink">
+                        <img src="https://i.pinimg.com/originals/7e/cb/b8/7ecbb87db2f488bc0986750e0b0f6fe3.jpg" class="albumArtwork">
+                    </span>
+                </div>
             </div>
             <div id="nowPlayingCenter">
 

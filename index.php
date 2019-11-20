@@ -1,5 +1,5 @@
 <?php include("includes/header.php"); ?>
-<h1>You Might Also Like</h1>
+<h1 class="pageHeadingBig">You Might Also Like</h1>
 
 <div class="gridViewContainer">
 <?php

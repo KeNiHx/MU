@@ -251,10 +251,9 @@ body {
 }
 
 .entityInfo {
-    width: 100%;
     padding: 40px 0 10px 0;
-    display: inline;
-    
+    display: inline-block;
+    width: 100%;
 }
 
 .entityInfo .leftSection {
@@ -262,9 +261,11 @@ body {
     float: left;
     max-width: 250px;
 }
-.widthInfo .leftSection img {
+
+.entityInfo .leftSection img {
     width: 100%;
 }
+
 .entityInfo .rightSection {
     width: 70%;
     float: left;
@@ -272,16 +273,13 @@ body {
     box-sizing: border-box;
 }
 
-.entityInfo .rightSection h2{
+.entityInfo .rightSection h2 {
     margin-top: 0px;
 }
 
-.entityInfo .rightSection p{
+.entityInfo .rightSection p {
     color: #939393;
     font-weight: 200;
-
 }
-
-
 
 

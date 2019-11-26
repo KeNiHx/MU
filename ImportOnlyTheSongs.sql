@@ -156,11 +156,11 @@ INSERT INTO `Songs` (`id`, `title`, `artist`, `album`, `genre`, `duration`, `pat
 (29, 'The Lounge', 3, 3, 8, '4:16', 'assets/music/bensound-thelounge.mp3 ', 3, 0),
 (30, 'Ukulele', 3, 3, 9, '2:26', 'assets/music/bensound-ukulele.mp3 ', 2, 0),
 (31, 'Tomorrow', 3, 3, 1, '4:54', 'assets/music/bensound-tomorrow.mp3 ', 1, 0),
-(32, 'BOOMBAYAH', 6, 13, 10, '4:04', 'assets\music\BLACKPINK - BOOMBAYAH.mp3 ', 1, 0),
-(33, 'DNA', 7, 14, 10, '4:15', 'assets\music\BTS - DNA.mp3', 1, 0),
-(34, 'Likey', 8, 15, 10, '3:41', 'assets\music\TWICE - LIKEY.mp3 ', 1, 0),
-(35, '10,000 Hours', 9, 16, 2, '2:47', 'assets\music\Dan + Shay, Justin Bieber - 10,000 Hours.mp3', 1, 0),
-(36, 'With You', 10, 17, 2, '3:22', 'assets\music\Tyler Shaw - With You.mp3 ', 1, 0);
+(32, 'BOOMBAYAH', 6, 8, 10, '4:04', 'assets/music/BLACKPINK - BOOMBAYAH.mp3 ', 1, 0),
+(33, 'DNA', 7, 9, 10, '4:15', 'assets/music/BTS - DNA.mp3', 1, 0),
+(34, 'Likey', 8, , 10, '3:41', 'assets/music/TWICE - LIKEY.mp3 ', 1, 0),
+(35, '10,000 Hours', 9, 11, 2, '2:47', 'assets/music/Dan + Shay, Justin Bieber - 10,000 Hours.mp3', 1, 0),
+(36, 'With You', 10, 12, 2, '3:22', 'assets/music/Tyler Shaw - With You.mp3 ', 1, 0);
 
 -- --------------------------------------------------------
 

@@ -24,6 +24,16 @@ $artist = $album-> getArtist();
         <p><?php echo $album->getNumberOfSongs(); ?> Songs</p>
     </div>
 
+    <div class="trackListContainer">
+        <?php
+        $songIdArray = $album->getSongIds();
+
+        foreach($songIdArray as $songId) {
+            echo $songId . "<br>";
+        }
+
+        ?>
+    </div>
 
 </div>
 

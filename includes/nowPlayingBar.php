@@ -21,7 +21,12 @@ $jsonArray = json_encode($resultArray);
     });
 
     function setTrack(trackId, newPlaylist, play) {
-
+        audioElement.setTrack("assets/music/bensound-acousticbreeze.mp3");
+        
+        if(play == true){
+            audioElement.play();
+        }
+        
     }
 </script>
 <div id="nowPlayingBarContainer">

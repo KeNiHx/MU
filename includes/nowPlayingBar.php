@@ -57,11 +57,6 @@ $(document).ready(function() {
 	$(document).mouseup(function() {
 		mouseDown = false;
 	});
-
-
-
-
-
 });
 
 function timeFromOffset(mouse, progressBar){
@@ -70,9 +65,21 @@ function timeFromOffset(mouse, progressBar){
 		audioElement.setTime(seconds);
 	}
 
+function nextSong() {
+	if(currentIndex == currentPlaylist.length - 1) {
+		currentIndex = 0;
+	}else{
+		currentIndex++;
+	}
+
+	var trackToPlay = currentPlaylist[currentIndex];
+	setTrack(trackToPlay, currentPlaylist, true);
+}	
 function setTrack(trackId, newPlaylist, play) {
 
 	$.post("includes/handlers/ajax/getSongJson.php", { songId: trackId }, function(data) {
+		
+		currentIndex = currentPlaylist.indexOf(trackId);
 
 		var track = JSON.parse(data);
 		$(".trackName span").text(track.title);
@@ -166,7 +173,7 @@ function pauseSong() {
 						<img src="assets/images/icons/pause.png" alt="Pause">
 					</button>
 
-					<button class="controlButton next" title="Next button">
+					<button class="controlButton next" title="Next button" onclick="nextSong()">
 						<img src="assets/images/icons/next.png" alt="Next">
 					</button>
 

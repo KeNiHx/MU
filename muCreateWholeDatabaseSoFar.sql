@@ -1,8 +1,12 @@
 -- phpMyAdmin SQL Dump
+-- version 4.2.7.1
+-- http://www.phpmyadmin.net
+--
+-- Host: localhost
 
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-
+SET time_zone = "+07:00";
 
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
@@ -158,10 +162,9 @@ INSERT INTO `Songs` (`id`, `title`, `artist`, `album`, `genre`, `duration`, `pat
 (31, 'Tomorrow', 3, 3, 1, '4:54', 'assets/music/bensound-tomorrow.mp3 ', 1, 0),
 (32, 'BOOMBAYAH', 6, 8, 10, '4:04', 'assets/music/BLACKPINK - BOOMBAYAH.mp3 ', 1, 0),
 (33, 'DNA', 7, 9, 10, '4:15', 'assets/music/BTS - DNA.mp3', 1, 0),
-(34, 'Likey', 8, 10, 10, '3:41', 'assets/music/TWICE - LIKEY.mp3 ', 1, 0),
+(34, 'Likey', 8,10 , 10, '3:41', 'assets/music/TWICE - LIKEY.mp3 ', 1, 0),
 (35, '10,000 Hours', 9, 11, 2, '2:47', 'assets/music/Dan + Shay, Justin Bieber - 10,000 Hours.mp3', 1, 0),
 (36, 'With You', 10, 12, 2, '3:22', 'assets/music/Tyler Shaw - With You.mp3 ', 1, 0);
-
 -- --------------------------------------------------------
 
 --

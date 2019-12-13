@@ -1,7 +1,7 @@
 <?php
-    class Account {
+	class Account {
 
-        private $con;
+		private $con;
 		private $errorArray;
 
 		public function __construct($con) {
@@ -9,17 +9,20 @@
 			$this->errorArray = array();
 		}
 
-		public function login($un, $pw){
+		public function login($un, $pw) {
+
 			$pw = md5($pw);
 
-			$query = mysqli_query($this-> con, "Select * FROM users WHERE username='$un' AND password='$pw'");
-			
-			if(mysqli_num_rows($query) == 1){
+			$query = mysqli_query($this->con, "SELECT * FROM users WHERE username='$un' AND password='$pw'");
+
+			if(mysqli_num_rows($query) == 1) {
 				return true;
-			}else{
+			}
+			else {
 				array_push($this->errorArray, Constants::$loginFailed);
 				return false;
 			}
+
 		}
 
 		public function register($un, $fn, $ln, $em, $em2, $pw, $pw2) {
@@ -48,7 +51,7 @@
 
 		private function insertUserDetails($un, $fn, $ln, $em, $pw) {
 			$encryptedPw = md5($pw);
-			$profilePic = "assets\images\profile-pics\generic-profile-image.png";
+			$profilePic = "assets/images/profile-pics/head_emerald.png";
 			$date = date("Y-m-d");
 
 			$result = mysqli_query($this->con, "INSERT INTO users VALUES ('', '$un', '$fn', '$ln', '$em', '$encryptedPw', '$date', '$profilePic')");

@@ -416,5 +416,9 @@ body {
     letter-spacing: 2px;
 }
 
+input:focus {
+    outline: none;
+}
+
 
 

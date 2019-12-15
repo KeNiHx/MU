@@ -10,5 +10,9 @@ class User {
         
     }
 
+    public function getUsername() {
+        return $this->username;
+    }
+
 }
 ?>
